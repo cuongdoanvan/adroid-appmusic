@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_quang_cao">
+
+    <ImageView
+        android:id="@+id/img_quang_cao_lon"
+        android:layout_width="370dp"
+        android:layout_height="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mau_quangcao" />
+
+    <ImageView
+        android:id="@+id/img_quang_cao_nho"
+        android:layout_width="227px"
+        android:layout_height="172px"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mau_quangcao_nho" />
+
+    <TextView
+        android:id="@+id/txt_quang_cao_ten_bai_hat"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ten ca khuc"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_noi_dung_quang_cao"
+        app:layout_constraintStart_toEndOf="@+id/img_quang_cao_nho" />
+
+    <TextView
+        android:id="@+id/txt_noi_dung_quang_cao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="20dp"
+        android:text="Mieu ta qua bai hat"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_quang_cao_lon"
+        app:layout_constraintStart_toStartOf="@+id/txt_quang_cao_ten_bai_hat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
